@@ -1,8 +1,8 @@
 pipeline { 
     agent any  
     tools { 
-        localMaven 
-        localJDK
+        maven @localMaven 
+        jdk @localJDK
     }
     stages {
         stage ('Initialize') {
