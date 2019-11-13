@@ -31,7 +31,7 @@ pipeline {
         stage('Docker Push') { 
             steps { 
                script{
-                    docker.build registry
+                    dockerImage = docker.build registry
                }
             }
         }
