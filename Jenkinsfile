@@ -1,5 +1,10 @@
 pipeline { 
-    agent any  
+     environment {
+        registry = "arig23498/inframind"
+        registryCredential = 'dockerhub'
+        dockerImage = ''
+    }
+    agent any
     tools { 
         maven 'localMaven' 
         jdk 'localJDK' 
@@ -15,14 +20,29 @@ pipeline {
                 ''' 
             }
         }
-        stage('Build') { 
+        stage('Maven Clean Build') { 
             steps { 
                sh '''
                     echo 'This is a minimal pipeline.'
                     mvn clean package
-                    ./target/bin/webapp
                 '''
             }
+        }
+        stage('Docker Push') { 
+            steps { 
+               script{
+                    docker.build registry
+               }
+            }
+        }
+        stage('Deploy Image') {
+            steps{
+                script {
+                        docker.withRegistry( '', registryCredential ) {
+                                dockerImage.push()
+                            }
+                        }
+                }
         }
     }
 }	
