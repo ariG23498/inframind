@@ -17,7 +17,11 @@ pipeline {
         }
         stage('Build') { 
             steps { 
-               echo 'This is a minimal pipeline.'
+               sh '''
+                    echo 'This is a minimal pipeline.'
+                    mvn clean package
+                    ./target/bin/webapp
+                '''
             }
         }
     }
