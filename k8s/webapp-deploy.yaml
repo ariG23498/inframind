@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: webapp
 spec:
-  type: nodePort
+  type: NodePort
   ports:
   - name: webapp
     port: 9090
