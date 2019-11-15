@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: arig23498/inframind
+        image: arig23498/inframind:15
         resources:
           limits:
             memory: "128Mi"
