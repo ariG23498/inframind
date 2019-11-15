@@ -12,7 +12,7 @@ public class DataBase {
    static final String DB_URL = "jdbc:mysql://10.109.234.143:3306/inframind";
 
    // Database credentials
-   static final String USER = "roots";
+   static final String USER = "root";
    static final String PASS = "Dare2@hack";
 
    public ArrayList<ArrayList<String>> getData() {
