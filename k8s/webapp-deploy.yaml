@@ -18,6 +18,7 @@ kind: Deployment
 metadata:
   name: webappdeploy
 spec:
+  replicas: 2
   selector:
     matchLabels:
       app: myapp
@@ -26,7 +27,6 @@ spec:
       labels:
         app: myapp
     spec:
-      replicas: 2
       containers:
       - name: webapp
         image: arig23498/inframind
