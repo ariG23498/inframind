@@ -7,5 +7,4 @@ Install docker on the master and slave servers.
 
 #### `hello-world` in docker:
 
-![docker](/home/aritra/Documents/Inframind/Inframind_aritra/inframind/assets/docker.png)
-
+![docker](https://github.com/ariG23498/inframind/blob/master/assets/docker.png)
