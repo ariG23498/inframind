@@ -13,3 +13,9 @@ To know the group on your system `$ compgen -u`
 
 ![docker](https://github.com/ariG23498/inframind/blob/master/assets/docker.png)
 
+### Kubernetes
+Types of objects kubernetes has:
+![types](https://github.com/ariG23498/inframind/blob/master/assets/types_of_objects.png)
+
+The ports in NodePort:
+![nodePort](https://github.com/ariG23498/inframind/blob/master/assets/nodePort.png)
