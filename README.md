@@ -22,4 +22,4 @@ The ports in NodePort:
 
 # Important
 #### NodePort expose range (30000-32767)
-#### $ kubectl set image <deployment>/<deployment name> <container name>=<image name>
+#### $ kubectl set image `deployment`/`deployment name` `container name` = `image name`
