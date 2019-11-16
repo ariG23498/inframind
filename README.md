@@ -20,4 +20,6 @@ Types of objects kubernetes has:
 The ports in NodePort:
 ![nodePort](https://github.com/ariG23498/inframind/blob/master/assets/nodePort.png)
 
-## NodePort expose range (30000-32767)
+# Important
+#### NodePort expose range (30000-32767)
+#### $ kubectl set image <deployment>/<deployment name> <container name>=<image name>
